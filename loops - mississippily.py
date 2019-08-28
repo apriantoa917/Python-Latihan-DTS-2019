@@ -7,3 +7,5 @@ for i in range(5) :
     time.sleep(1)
 
 print("Ready or not, here I come!")
+
+print("the Ugly Vowel Eater".lower())
