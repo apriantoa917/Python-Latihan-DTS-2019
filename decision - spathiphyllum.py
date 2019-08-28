@@ -1,3 +1,5 @@
+# 3.1.1.11 LAB: Comparison operators and conditional execution
+
 #variabel input kata dari user
 word = input("keyword : ")
 
