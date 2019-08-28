@@ -1,3 +1,5 @@
+#3.1.1.12 LAB: Essentials of the if-else statement
+
 income = float(input("Enter the annual income: "))
 
 if income <= 85528 :
