@@ -12,3 +12,14 @@ for i in range(10):
     a.append(i+1)
 
 print("isi list sesudah : ",a)
+
+# mengisi dengan kebalikannya / reverse
+
+b = []
+
+print("isi list sebelum : ",b)
+
+for i in range(10):
+    b.insert(0,i+1)
+
+print("isi list sesudah : ",b)
