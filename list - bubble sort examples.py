@@ -1,3 +1,6 @@
+# 3.1.5.2 Sorting simple lists - the bubble sort algorithm
+# 3.1.5.3 Sorting simple lists - the bubble sort algorithm
+
 # cara sendiri
 
 myList = [8, 10, 6, 2, 4]
@@ -26,5 +29,15 @@ while swapped:
         if myList[i] > myList[i + 1]:
             swapped = True # swap occured!
             myList[i], myList[i + 1] = myList[i + 1], myList[i]
+
+print(myList)
+
+# cara python very simple -------------------------------------------------------------------
+
+# menggunakan method sort()
+
+myList = [8, 10, 6, 2, 4] # list to sort
+
+myList.sort()
 
 print(myList)
