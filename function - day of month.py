@@ -13,16 +13,16 @@ def isYearLeap(year):
 def daysInMonth(year, month):
     if year < 1582 or month < 1 or month > 12:
         return None
-    days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    days = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31] # <- days[1]  different with module
     res = days[month - 1]
     if month == 2 and isYearLeap(year):
-        res = 28 # <-- should be 28, prev in skeleton written 29
+        res = 28 # <- different with module
     return res
 
 
-testyears = [1900, 2000, 2016, 1987]
-testmonths = [2, 2, 1, 11]
-testresults = [28, 29, 31, 30]
+testyears = [1900, 2000, 2016, 1987, 2001]
+testmonths = [2, 2, 1, 11, 2]
+testresults = [28, 29, 31, 30, 28]
 for i in range(len(testyears)):
     yr = testyears[i]
     mo = testmonths[i]
