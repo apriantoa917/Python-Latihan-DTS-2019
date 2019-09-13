@@ -15,7 +15,9 @@
 #     else:
 #         print(word, "is not in dictionary")
 
-dict = {"cat" : "chat", "dog" : "chien", "horse" : "cheval"}
+dict = {"cat" : "chat", "dog" : "chien", "horse" : "cheval", "ant":"man"}
 
 for key in dict.keys():
-    print(key, "->", dict[key])
+    print(key, "->", dict[key]) 
+
+print(dict)
