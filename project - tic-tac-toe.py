@@ -6,8 +6,6 @@ block = [None,None,None,None,"X",None,None,None,None,]
 
 result = "Draw"
 
-
-
 def showBoard():
     print('+-------+-------+-------+')
     print('|       |       |       |')
@@ -91,4 +89,3 @@ while counter <= 9 and result == "Draw":
 print()
 print('-----WIN :',result,'-----')
 print()
-
