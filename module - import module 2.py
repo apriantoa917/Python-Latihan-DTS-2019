@@ -19,3 +19,7 @@ print(sinus(90))
 print(moduls.pi)
 
 # from math import * -> import all entities inside module, warning about unused item
+
+# show all entities inside module using dir()
+
+print(dir(moduls))
