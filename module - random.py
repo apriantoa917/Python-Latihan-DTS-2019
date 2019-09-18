@@ -1,4 +1,4 @@
-# 5.1.2.6 Useful modules | random
+# 5.1.2.6 Useful modules | random - 5.1.2.9 Useful modules | random
 
 from random import random, seed, randrange, randint
 
