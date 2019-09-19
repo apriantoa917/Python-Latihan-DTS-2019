@@ -1,0 +1,29 @@
+ArithmeticError
+-------------------------------------------------
+Location:       BaseException ← Exception ← ArithmeticError
+Description:    pengecualian abstrak termasuk semua pengecualian yang disebabkan oleh operasi aritmatika seperti nol divisi atau domain argumen yang tidak valid
+
+
+AssertionError
+-------------------------------------------------
+Location:       BaseException ← Exception ← AssertionError
+Description:    pengecualian konkret yang diajukan oleh instruksi tegas ketika argumennya mengevaluasi ke False, None, 0, atau string kosong
+
+
+BaseException
+-------------------------------------------------
+Location:       BaseException
+Description:    yang paling umum (abstrak) dari semua pengecualian Python - semua pengecualian lain termasuk dalam yang satu ini; dapat dikatakan bahwa dua cabang berikut kecuali yang setara: kecuali: dan kecuali BaseException
+
+
+IndexError
+-------------------------------------------------
+Location:       BaseException ← Exception ← LookupError ← IndexError
+Description:    pengecualian konkret yang dimunculkan ketika Anda mencoba mengakses elemen urutan yang tidak ada (mis., elemen daftar)
+contoh : a = [1,2,3], print a[3] <- index max = 2 (0,1,2)
+
+
+KeyboardInterrupt
+-------------------------------------------------
+Location:       BaseException ← KeyboardInterrupt
+Description:    pengecualian konkret yang dimunculkan ketika pengguna menggunakan pintasan keyboard yang dirancang untuk mengakhiri eksekusi program (Ctrl-C di sebagian besar OS); jika menangani pengecualian ini tidak mengarah ke penghentian program, program melanjutkan pelaksanaannya. Catatan: pengecualian ini tidak berasal dari kelas Exception. Jalankan program di IDLE.
