@@ -27,3 +27,84 @@ KeyboardInterrupt
 -------------------------------------------------
 Location:       BaseException ← KeyboardInterrupt
 Description:    pengecualian konkret yang dimunculkan ketika pengguna menggunakan pintasan keyboard yang dirancang untuk mengakhiri eksekusi program (Ctrl-C di sebagian besar OS); jika menangani pengecualian ini tidak mengarah ke penghentian program, program melanjutkan pelaksanaannya. Catatan: pengecualian ini tidak berasal dari kelas Exception. Jalankan program di IDLE.
+
+
+LookupError
+-------------------------------------------------
+Location:       BaseException ← Exception ← LookupError
+Description:    pengecualian abstrak termasuk semua pengecualian yang disebabkan oleh kesalahan yang dihasilkan dari referensi yang tidak valid ke berbagai koleksi (daftar, kamus, tuple, dll.) 
+
+
+MemoryError
+-------------------------------------------------
+Location:       BaseException ← Exception ← MemoryError
+Description:    pengecualian konkret dimunculkan ketika operasi tidak dapat diselesaikan karena kurangnya memori bebas
+CONTOH :
+
+# this code causes the MemoryError exception
+# warning: executing this code may be crucial
+# for your OS
+# don't run it in production environments!
+
+string = 'x'
+try:
+    while True:
+        string = string + string
+        print(len(string))
+except MemoryError:
+    print('This is not funny!')
+
+
+OverflowError
+-------------------------------------------------
+Location:       BaseException ← Exception ← ArithmeticError ← OverflowError
+Description:    pengecualian konkret dimunculkan ketika operasi menghasilkan angka yang terlalu besar untuk berhasil disimpan
+CONTOH :
+
+# the code prints subsequent
+# values of exp(k), k = 1, 2, 4, 8, 16, ...
+
+from math import exp
+ex = 1
+try:
+    while True:
+        print(exp(ex))
+        ex *= 2
+except OverflowError:
+    print('The number is too big.')
+
+
+ImportError
+-------------------------------------------------
+Location:       BaseException ← Exception ← StandardError ← ImportError 
+Description:    pengecualian konkret raised ketika operasi impor gagal
+CONTOH:
+
+# one of this imports will fail - which one?
+
+try:
+    import math
+    import time
+    import abracadabra
+
+except:
+    print('One of your imports has failed.')
+
+
+KeyError
+-------------------------------------------------
+Location:       BaseException ← Exception ← LookupError ← KeyError
+Description:    pengecualian konkret yang dimunculkan ketika Anda mencoba mengakses elemen koleksi yang tidak ada (mis., elemen kamus)
+CONTOH:
+
+# how to abuse the dictionary
+# and how to deal with it
+
+dict = { 'a' : 'b', 'b' : 'c', 'c' : 'd' }
+ch = 'a'
+try:
+    while True:
+        ch = dict[ch]
+        print(ch)
+except KeyError:
+    print('No such key:', ch)
