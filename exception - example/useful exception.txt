@@ -108,3 +108,6 @@ try:
         print(ch)
 except KeyError:
     print('No such key:', ch)
+
+
+LEARN MORE : https://docs.python.org/3.6/library/exceptions.html
