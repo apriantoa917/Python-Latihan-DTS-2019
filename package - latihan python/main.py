@@ -4,8 +4,6 @@ print(os.getcwd()) # dir sekarang
 
 os.chdir('D:\\Project\\Project Python\\DTS Python\\package - latihan python')
 
-print(os.getcwd()) # dir setelah ubah dir
-
-import latihan_package.alpha as a
+from latihan_package import alpha as a
 
 a.alphasatu()
