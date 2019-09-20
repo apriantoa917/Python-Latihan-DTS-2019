@@ -7,12 +7,13 @@ def readint(prompt, min, max):
             val = int(input(prompt))
             cek = True
         except:
-            print('Wrong input')
+            print('Error: wrong input')
     if cek :
         if val >= -10 and val <= 10:
             return val
         else:
-            print('over the limit')
+            print('Error: the value is not within permitted range (',min,'..',max,')')
+            readint("Enter a number from -10 to 10: ", -10, 10)
         
 
 v = readint("Enter a number from -10 to 10: ", -10, 10)
