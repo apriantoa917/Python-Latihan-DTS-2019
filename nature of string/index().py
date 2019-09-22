@@ -6,3 +6,5 @@ print("aAbByYzZaA".index("Z"))
 print("aAbByYzZaA".index("A"))
 
 # index() : mengembalikan index dimana karakter itu berada. index yang diambil adalah index terdekat / pertama yang ditemukan
+
+# materi yang familiar lihat : find()
