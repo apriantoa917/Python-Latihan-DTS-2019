@@ -29,3 +29,16 @@ kata = 'hahe'
 
 print(kata.find('a',0,3)) # kata yang dicari = a dimulai dari index 0 (h) sampai index ke 2 (3-1 = 2 = h), ditemukan : ya, index = 1
 print(kata.find('a',0,1)) # kata yang dicari = a dimulai dari index 0 (h) sampai index ke 0 (1-1 = 0 = h), ditemukan : tidak, index = -1
+
+print()
+print("rfind")
+print()
+
+# rfind = right find = kebalikan find(). jika find mengembalikan indeks karakter yang cocok di awal (index pertama yang cocok), rfind mengembalikan index karakter yang cocok pada akhir
+# misal : kata = abcdefcabcd , find(c) , index = 2, c yang cocok pertama ada di index ke 2
+#                            rfind(c), index = 9, c yang cocok terakhir ada di index ke 9(paling kanan/akhir)
+
+# Demonstrating the rfind() method
+print("tau tau tau".rfind("ta"))
+print("tau tau tau".rfind("ta", 9)) # meski sebelumnya ta sudah ketemu 2*, index awal 0 - 9 (berhenti di t) pencarian dilakukan dari kiri ke kanan, hanya menemukan t bukan ta
+print("tau tau tau".rfind("ta", 3, 9))
