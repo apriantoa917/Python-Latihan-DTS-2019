@@ -20,3 +20,7 @@ check(kata,'e')
 check('aprianto','a')
 check('aprianto','o')
 
+# startwith = mengecek apakah suatu kata diawali dengan karakter tertentu, megembalikan nilai T/F
+
+print("omega".startswith("meg"))
+print("omega".startswith("om"))
