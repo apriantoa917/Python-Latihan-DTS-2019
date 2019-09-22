@@ -21,3 +21,9 @@ name = '   aprianto   '
 print('['+name.rstrip()+']')
 print("www.cisco.com".rstrip("om"))
 print("www.cisco.com".rstrip(".com"))
+
+#strip() = menghapus spasi / karakter diantara 2 sisi (kanan & kiri)
+
+print("[" + "   aleph   ".strip() + "]")
+print("[" + "ooovovooo".strip('o') + "]")
+print("[" + "---ovo---".strip('-') + "]")
