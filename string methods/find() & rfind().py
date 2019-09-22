@@ -1,4 +1,4 @@
-# 5.1.9.4 String methods
+# 5.1.9.4 String methods, 5.1.9.12 String methods
 
 # find mengembalikan index dimana karakter yang dicari dalam sebuah kata berada
 # find seperti index tapi lebih aman. find tidak menyebabkan eror saat karakter yang dicari dari sebuah kata tidak ada, hanya mengembalikan -1
