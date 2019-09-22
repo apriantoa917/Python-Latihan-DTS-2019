@@ -8,3 +8,10 @@ print(' Alpha'.capitalize())
 print('123'.capitalize())
 print("αβγδ".capitalize())
 print("alpha beta teta".capitalize())
+
+# lower() = menjadikan sebuah kata menjadi huruf kecil semua
+
+print("SiGmA=60".lower())
+print("SisMM".lower())
+print("SAMA = sama".lower())
+print("saMA= SAma".lower())
