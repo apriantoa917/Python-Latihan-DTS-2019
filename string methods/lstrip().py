@@ -8,3 +8,7 @@ print(name.lstrip(' a'))
 
 name = 'asc.def,,,ds'
 print(name.lstrip('.sacdef'))
+
+print("www.cisco.com".lstrip("w."))
+
+print("pythoninstitute.org".lstrip(".org"))
