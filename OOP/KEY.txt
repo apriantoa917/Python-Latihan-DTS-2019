@@ -1,0 +1,8 @@
+pembuatan class diawali dengan keyword class
+
+untuk constructor di definisi dengan __init__(params)
+
+enkasulapsi (private) ditandai dengan __ sebelum nama variabel digunakan, untuk public tidak memakai __
+contoh :
+    public      lst = []
+    private     __lst = [] <- variabel hanya dapat diakses di kelas tersebut saja
