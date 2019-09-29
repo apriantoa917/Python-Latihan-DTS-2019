@@ -1,4 +1,5 @@
-# 6.1.4.1 OOP: Methods
+# 6.1.4.1 OOP: Methods -6.1.4.2 OOP: Methods
+
 
 # There is one fundamental requirement - a method is obliged to have at least one parameter(there are no such thing as parameterless methods - a method may be invoked without an argument, but not declared without parameters).
 # self biasa digunakan untuk parameter, beberapa kondisi akan eror jika parameter pertama != self
